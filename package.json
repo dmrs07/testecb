@@ -8,7 +8,9 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lint": "tslint ./app/**/*.ts -t verbose",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "typings": "typings",
+    "postinstall": "typings install"
   },
   "license": "ISC",
   "dependencies": {
