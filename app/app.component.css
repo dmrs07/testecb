@@ -1,0 +1,15 @@
+li {
+    font-size: large;
+}
+
+div.panel-heading {
+   font-size: x-large; 
+}
+
+body {
+    background-image: url(assets/images/img-bg-login.jpg);
+    background-color: #3D3D3D;
+    background-size: : 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
