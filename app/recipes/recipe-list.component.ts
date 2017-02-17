@@ -21,21 +21,18 @@ export class RecipeListComponent implements OnInit {
 	
 	constructor(private _recipeService: RecipeService, public _router: Router){
 		var x = document.cookie.split(';');
-		console.log(document.cookie);
+		
 		var i = 0;
 		for(; i < x.length; i++){
 			if(x[i].split('=')[0].trim() == 'sessionID'){
 				var cookieValue = x[i].split('=')[1];
-				console.log(cookieValue);
 				break;
 			}
 		}
-		console.log(cookieValue);
 		if(cookieValue == undefined) {
 			this._router.navigate(['login']);
 		} else {
 			var auth = atob(cookieValue).split('??');
-			console.log('auth ' +auth+'| atob auth0 '+atob(auth[0]) );
 			if(auth[0] == 'admin' && auth[1] == 'admin'){
 				this._router.navigate(['recipes']);
 			} 

@@ -7,7 +7,6 @@ import { CommonModule } from '@angular/common';
 
 import { RecipeListComponent } from './recipes/recipe-list.component';
 import { AppComponent }  from './app.component';
-import { StarComponent } from './shared/star.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail.component';
 import { WelcomeComponent } from './home/welcome.component';
 
@@ -35,7 +34,6 @@ import { RecipeFilterPipe } from './recipes/recipe-filter.pipe';
   declarations: [ 
   	AppComponent, 
   	RecipeListComponent,
-  	StarComponent,
   	RecipeFilterPipe,
   	WelcomeComponent,
   	RecipeDetailComponent

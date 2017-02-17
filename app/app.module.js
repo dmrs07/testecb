@@ -13,7 +13,6 @@ var router_1 = require("@angular/router");
 var common_1 = require("@angular/common");
 var recipe_list_component_1 = require("./recipes/recipe-list.component");
 var app_component_1 = require("./app.component");
-var star_component_1 = require("./shared/star.component");
 var recipe_detail_component_1 = require("./recipes/recipe-detail.component");
 var welcome_component_1 = require("./home/welcome.component");
 var recipe_guard_service_1 = require("./recipes/recipe-guard.service");
@@ -43,7 +42,6 @@ AppModule = __decorate([
         declarations: [
             app_component_1.AppComponent,
             recipe_list_component_1.RecipeListComponent,
-            star_component_1.StarComponent,
             recipe_filter_pipe_1.RecipeFilterPipe,
             welcome_component_1.WelcomeComponent,
             recipe_detail_component_1.RecipeDetailComponent
